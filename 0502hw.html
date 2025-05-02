@@ -25,8 +25,6 @@
             #custom-photo {
             display: none; /* 預設隱藏 */
             position: fixed;
-            height:350px;
-            weight:350px;
             top: 20px; /* 距離頂部 20px */
             left: 50%;
             transform: translateX(-50%);
@@ -38,12 +36,16 @@
             z-index: 9999;
             pointer-events: none;
             }
+            #photoC {
+                height: 350px;
+                weight: 350px;
+            }
         </style>
     </head>
     <body>
         <!-- 1. HTML 裡先放一個自訂的 DIV -->
         <div id="custom-photo">
-            <img src="/sleep_meme.png" alt="">
+            <img src="/sleep_meme.png" alt="" id="photoC">
         </div>
         <!-- 2. 你的 AR 場景 -->
         <!-- 標記副檔名須為.mind -->
